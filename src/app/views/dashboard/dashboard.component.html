@@ -1,0 +1,15 @@
+<div >
+  barcode <span *ngIf="barcode" >  {{ barcode }} </span>
+</div>
+
+<button type="button" class="btn btn-warning" (click)="startScanner()">
+  startScanner
+</button>
+
+<div class="input-group">
+  <div id="inputBarcode" style="position: static">
+    <div id="interactive" class="viewport"></div>
+  </div>
+</div>
+
+<!-- https://stackoverflow.com/questions/45219565/implementing-a-barcode-scanner-in-angular-4 -->
